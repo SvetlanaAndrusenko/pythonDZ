@@ -48,8 +48,8 @@ print(proverka)
 """
 n = float(input('Enter the number n ='))
 n1 = n
-n2 = n*10 + n
-n3 = n*100 + n*10 +n
+n2 = n*11
+n3 = n*111
 number = n1 + n2 + n3
 print(number)
 """
@@ -60,7 +60,7 @@ input_num = int(input('Enter the number:'))
 
 i = 0
 a = -1
-if (type(input_num) == int and input_num > 0):
+if (input_num > 0):
     while input_num > 10:
         b = input_num % 10
         i += 1
@@ -102,7 +102,7 @@ i = 1
 
 while a < b:
     i = i + 1
-    a = a + a * 0.1
+    a *= 1.1
 
 print(i)
 res = f"On the {i}th day he achieved the result - no more than {b} km"
