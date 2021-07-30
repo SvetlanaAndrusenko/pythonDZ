@@ -8,7 +8,7 @@ if len(argv) < 4:
     raise SystemExit(-1)
 
 def sal(a, b, c):
-    salary = (float(a) * float(b)) + int(c)
+    salary = (float(a) * float(b)) + float(c)
     return f"Employee's salary: {salary}"
 
 script_name, hours, rate, reward = argv[0], argv[1], argv[2], argv[3]
