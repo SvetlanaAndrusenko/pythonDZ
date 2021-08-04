@@ -1,0 +1,4 @@
+Hi!
+My name is Svetlana.
+I am 23 years old.
+I study programming language Python.
