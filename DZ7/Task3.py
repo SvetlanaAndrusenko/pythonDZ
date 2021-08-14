@@ -43,11 +43,18 @@ class Cell():
     def __truediv__(self, other):
         return Cell(round(self.number//other.number))
 
-    #def make_order(self, num_row):
+    def make_order(self, num_row): # количество ячеек в ряду = 5 для второй и 12 для первой
+        s = ''
+        for i in range(self.number//num_row):
+            s += '*' * num_row + '\n'
+        s += '*' * (self.number % num_row) + '\n'
+        return s
 
 cell_1 = Cell(50)
-cell_2 = Cell(10)
+cell_2 = Cell(12)
 print((cell_1 + cell_2).number)
 print((cell_1 - cell_2).number)
 print((cell_1 * cell_2).number)
 print((cell_1 / cell_2).number)
+print(cell_1.make_order(12))
+print(cell_2.make_order(5))
